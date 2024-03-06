@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatsapp</title>
+<style>
+
+body{
+    background-color: black;
+}
+
+.mainframe{
+    height: 80vh;
+    width: 40vh;
+    border: 2px solid white;
+    margin-left: 30vh;
+    border-radius: 30px;
+    
+}
+
+.notch{
+height: 20px;
+position: relative;
+width: 100px;
+border: 2px solid  rgb(44, 41, 41);
+margin-left:90px;
+border-radius: 50px;
+margin-top: 10px;
+background-color: rgb(44, 41, 41);
+}
+
+header{
+    height: 10vh;
+    width: 40vh;
+    background-color: rgb(10, 143, 87);
+    position:fixed;
+    top: 9px;
+    border-radius: 30px 30px 0px 0px ;
+}
+
+header h1{
+    color: white;
+    font-size: 21px;
+    margin-top: 5vh;
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body{
+    height: 75.4vh;
+    width: auto;
+    background-color: rgb(240, 250, 171);
+    border-radius: 0 0 30px 30px;
+}
+.footer ul{
+    display: flex;
+    position: absolute;
+    bottom: 18vh;
+    left:28vh;
+    list-style: none;
+}
+
+.footer ul a{
+text-decoration: none;
+    color:black;
+    font-weight: 10px;;
+    cursor: pointer;
+}
+.footer li{
+    padding: 8px;
+}
+
+.footer{
+    background-color: white;
+}
+
+.icon ul{
+     list-style: none;
+     display: flex;
+     position:absolute;
+     top: 23px;
+     right: 5px;
+}
+
+.icon li{
+    padding: 3px;
+}
+.dp{
+    height: 5vh;
+    width: 5vh;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 50px;
+    top: 12vh;
+}
+
+h3{
+    font-size: 18px;
+}
+p{
+    font-size: x-small;
+}
+.icon-image{
+    height: 2.5vh;
+    filter: invert(1);
+    width: 3vh;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+
+}
+.search-icon{
+    height: 5vh;
+    filter: invert(1);
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    position:fixed;
+    left: 455px;
+    top:6vh
+    
+}
+.container{
+    display: grid;
+    place-items: center;
+    margin-right: -70px;
+}
+.container1{
+    display: grid;
+    place-items: center;
+    margin-right: -70px;
+}
+
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 2px;
+
+}
+.group-menu{
+    cursor: pointer;
+}
+
+.group-menu1{
+    cursor: pointer;
+}
+.style{
+    width:180px;
+    height: 110px;
+    background-color: rgb(249, 255, 255);
+    margin-top: 5px;
+    margin-left: -100px;
+    border-radius: 20px;
+}
+
+.style1{
+    width:180px;
+    height: 300px;
+    background-color:#000;
+    margin-top: 5px;
+    margin-left: -100px;
+    border-radius: 20px;
+}
+
+
+.frame1{
+visibility: hidden;
+}
+
+.frame2{
+visibility: hidden;
+}
+
+.frame1 .info{
+    font-size: 20px;
+    color:rgb(141, 14, 14);
+    border-bottom: 1px solid rgb(254, 254, 254);
+    padding-top:13px;
+    cursor: pointer;
+}
+
+.frame2 .info{
+    font-size: 20px;
+    color:rgb(141, 14, 14);
+    border-bottom: 1px solid rgb(254, 254, 254);
+    padding-top:13px;
+    cursor: pointer;
+}
+
+
+.frame1 .info:hover{
+    background-color: black;
+    border-radius: 20px;
+}
+.frame1 .info span{
+margin-left: 20px;
+}
+.frame2 .info:hover{
+    background-color: black;
+    border-radius: 20px;
+}
+.frame2 .info span{
+margin-left: 20px;
+}
+
+
+.frame1 .info span:hover{
+margin-left: 35px;
+
+}
+.icon-image, .search-icon{
+    position: fixed;
+}
+.search-icon{
+    right:40vh;
+}
+.new_chat{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(10, 143, 87);
+    border-radius: 15px;
+    position:fixed;
+    left: 455px;
+    top: 65vh;
+    cursor: pointer;
+}
+.new_chat img{
+    height:20px;
+    width: 20px;
+    margin-top: 15px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.creat_call{
+    height: 8vh;
+    width: 8vh;
+    background-color:rgb(10, 143, 87);;
+    position: absolute;
+    margin-top: 50px;
+    border-radius: 50px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.creat_call img{
+    height: 25px;
+    rotate: 45deg;
+    margin-top: 17px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    margin-left: 15px;
+    filter: invert();
+    cursor: pointer;
+}
+
+h3{
+    font-size: 19px;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+p{
+    font-size: 12px;
+}
+
+</style>
+</head>
+<body>
+    <div class="mainframe">
+        <header>
+            <h1>WhatsApp</h1>
+            <div class="icon">
+                <ul>
+                    <li>
+                        <img src="camera icon.png" class="icon-image" alt="">
+                    </li>
+                    <li>
+                        <img src="search icon image.webp" class="search-icon" alt="">
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="group-menu" onclick="fun()">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="frame1" id="frame1">
+                            <div class="info"><span>Settings</span></div>
+                            <div class="info"><span>Switch accounts</span></div>
+                            <div class="info" onclick="remove()"><span>Close tab</span></div>
+                            </div>
+                        </div>
+
+
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="footer">
+            <ul>
+                <a href="phone_whatsapp.html"><li>Chats</li></a>
+                <a href="update.html"><li>Update</li></a>
+                <a href="commnities.html"><li>Communities</li></a>
+                <a href="call.html"><li>Calls</li></a>
+                
+            </ul>
+        </div>
+    <div class="notch"></div>
+    <div class="body">
+              <div class="creat_call">
+                <img src="link.png" alt="">
+              </div>
+              <h3>Create call link
+                <p>Share a link for your WhatsApp call</p>
+              </h3>                                                                                                           
+            
+            <div class="new_chat"> 
+                <img src="call pluse.webp" alt=""></div>
+        </div>
+</div>       
+<script>
+function fun(){
+    document.getElementById("frame1").style.visibility="visible"; 
+    document.getElementById("frame1").classList.add("style");
+}
+function remove(){
+    document.getElementById("frame1").classList.remove("style");
+}
+</script>
+</body>
+</html>
